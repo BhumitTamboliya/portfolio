@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Shop Order Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f1f1f1, #e3e3e3, #c0c0c0); /* Gradient background */
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 400px;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 15px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[required], 
+        .form-group select[required], 
+        .form-group textarea[required] {
+            border: 1px solid #ff6f61;
+        }
+        .note {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+        .required:after {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Cafe Shop Order Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name" class="required">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="required">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="required">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="drink" class="required">Choose a Drink:</label>
+                <select id="drink" name="drink" required>
+                    <option value="" disabled selected>Select your drink</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="latte">Latte</option>
+                    <option value="tea">Tea</option>
+                    <option value="smoothie">Smoothie</option>
+                    <option value="hot-chocolate">Hot Chocolate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size" class="required">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <p id="price" style="font-weight: bold;"></p>
+            </div>
+            
+            <div class="form-group">
+                <label for="customizations">Customizations (optional):</label>
+                <textarea id="customizations" name="customizations" rows="4" placeholder="Any custom requests (e.g., extra shot, no sugar)"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Place Order">
+            </div>
+        </form>
+        <div class="note">
+            <p>Note: This is a sample form. Orders are not being processed at the moment.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

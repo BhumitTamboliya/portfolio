@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> <!-- Creepster font -->
+    <style>
+        body {
+            font-family: 'Creepster', cursive;
+            background: url('https://www.w3schools.com/w3images/forest.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #e6e6e6;
+            text-align: center;
+            padding: 50px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            cursor: none; /* Hide the default cursor */
+        }
+
+        h1 {
+            color: #ff0000;
+            margin-bottom: 30px;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0 0 30px #ff0000;
+            animation: flicker 2s infinite, distort 1s ease-in-out infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            10%, 30%, 50%, 70% {
+                opacity: 0.6;
+            }
+            20%, 40%, 60% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes distort {
+            0% {
+                transform: translateX(0) rotate(0deg);
+            }
+            50% {
+                transform: translateX(10px) rotate(10deg);
+            }
+            100% {
+                transform: translateX(-10px) rotate(-10deg);
+            }
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            animation: glitch 1s ease-in-out infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translateX(0);
+                clip: rect(0, auto, auto, 0);
+            }
+            50% {
+                transform: translateX(-10px);
+                clip: rect(10px, auto, auto, 0);
+            }
+            100% {
+                transform: translateX(10px);
+                clip: rect(0, auto, auto, 0);
+            }
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.7);
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ff0000;
+            border-radius: 25px;
+            font-size: 16px;
+            background-color: #222;
+            color: #ff0000;
+            transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+            text-transform: uppercase;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            75% {
+                transform: translateX(-5px);
+            }
+            100% {
+                transform: translateX(5px);
+            }
+        }
+
+        input[type="number"]:focus,
+        input[type="text"]:focus {
+            border-color: #ff6666;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        button {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #cc0000;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
+        }
+
+        button:active {
+            transform: translateY(0) scale(1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #e6e6e6;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: bloodDrip 2s infinite linear;
+        }
+
+        @keyframes bloodDrip {
+            0% {
+                color: #e6e6e6;
+            }
+            50% {
+                color: #ff0000;
+            }
+            100% {
+                color: #e6e6e6;
+            }
+        }
+
+        /* Creepy Hand */
+        .hand {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://www.iconfinder.com/icons/563343/hand-icon') no-repeat center center;
+            background-size: cover;
+            animation: handReach 5s infinite;
+            left: 50%;
+            top: 80%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes handReach {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-100px);
+            }
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Floating Eyes */
+        .eye {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            animation: eyeMove 4s ease-in-out infinite;
+        }
+
+        .eye:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .eye:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .eye:nth-child(2) {
+            top: 25%;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .eye:nth-child(3) {
+            top: 50%;
+            left: 70%;
+            animation-delay: 4s;
+        }
+
+        @keyframes eyeMove {
+            0% {
+                transform: translateY(-30px) translateX(-30px);
+            }
+
+            50% {
+                transform: translateY(30px) translateX(30px);
+            }
+
+            100% {
+                transform: translateY(-30px) translateX(-30px);
+            }
+        }
+
+        /* Spider Web */
+        .web {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgba(255, 0, 0, 0.7);
+            border-radius: 50%;
+            animation: spinWeb 10s infinite linear;
+        }
+
+        .web:before,
+        .web:after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.7);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .web:before {
+            transform: rotate(45deg);
+        }
+
+        @keyframes spinWeb {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating Eyes -->
+    <div class="eye"></div>
+    <div class="eye"></div>
+    <div class="eye"></div>
+
+    <!-- Spider Web -->
+    <div class="web"></div>
+
+    <!-- Creepy Hand -->
+    <div class="hand"></div>
+
+    <!-- Horror Sound (Add audio for extra horror) -->
+    <audio autoplay loop>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>Celsius to Fahrenheit</h1>
+        <input type="text" id="celsius" placeholder="Enter °C" required>
+        <button onclick="convert()">Convert</button>
+        <input type="text" id="fahrenheit" placeholder="Result in °F" readonly>
+    </div>
+
+    <div class="footer">
+        <p>Chill... it's just a conversion. <span style="color: #ff0000;">Or is it?</span></p>
+    </div>
+
+    <script>
+        function convert() {
+            var celsius = document.getElementById("celsius").value;
+            var fahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById("fahrenheit").value = fahrenheit.toFixed(2); // Limit to 2 decimal places
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+/* navigation */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 6px;
+    padding-bottom: 8px;
+}
+/* home section */
+
+#home{
+    height: 367px;
+    padding: 3px 10px;
+
+}
+
+#home::before{
+    height: 480px;
+}
+
+#home P{
+    font-size: 13px;
+}
+/* placement section */
+#Placement{
+   flex-direction: column;
+}
+
+
+
+/* cilent section  */
+
+#tops{
+    flex-wrap: wrap;
+}
+
+#tops img{
+    width: 94px ;
+    padding: 10px 11px;
+}
+/* contact section */
+
+#contact-box form{
+    width: 80%;
+}
+
+/* utility section */
+
+.h-primary{
+    font-size: 26px;
+}

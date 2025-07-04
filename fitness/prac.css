@@ -1,0 +1,206 @@
+.pic1 {
+    margin: 0px;
+    padding: 10px;
+    width: 98%;
+    /* position: absolute; */
+    background-image: url(minaam-shaikh-view-01.jpg);
+    position:initial;
+}
+
+.left img {
+    width: 120px;
+}
+
+.left div {
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+
+}
+
+.mid {
+    display: block;
+    margin: 40px auto;
+    width: 48%;
+    border: 3px solid yellow;
+    border-radius: 8px;
+}
+
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    top: 10px;
+    font-size: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: double;
+    padding: 7px 8px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+
+
+.right {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    display: inline-block;
+    /* border: 3px solid yellow; */
+}
+
+.btn {
+    margin: 10px 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid grey;
+    border-radius: 8px;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.container {
+    margin: 90px 65px;
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 60px;
+    width: 35%;
+    /* background-color:; */
+    border-style: ridge;
+    background-image: url(images.jpeg);
+}
+
+.container h1 {
+    text-align: center;
+    border: 3px solid blue;
+    border-style: double;
+    background-color: black;
+    color: white;
+
+}
+
+.container h3 {
+    text-align: left;
+    color: black;
+    /* border: 3px solid blue; */
+    /* border-style: double; */
+    /* background-color: white; */
+    /* margin: 5px 5px; */
+    /* padding:5px ; */
+    /* width: 20%; */
+}
+
+.btn1 {
+    margin: 16px 110px;
+    text-align: center;
+    padding: 4px 44px;
+    border: 3px solid gray;
+    border-radius: 4px;
+    /* border-style: dashed; */
+    background-color: orange;
+    color: white;
+}
+
+.btn1:hover {
+    background-color: green;
+}
+
+.form-group input {
+    margin: 5px 5px;
+    padding: 3px 3px;
+    /* border: 3px solid black; */
+    /* border-radius: 4px ; */
+    text-align: center;
+    width: 200px;
+    display: block;
+}
+
+.form-group1 {
+    margin: 3px 3px;
+    padding: 4px 4px;
+    position: left;
+    /* border: 3px solid black;  */
+    /* border-radius: 4px; */
+    text-align: center;
+    width: 90px;
+    /* display: block; */
+    border: 40px;
+    
+}
+
+.important{
+    height: 20px;
+    width: 30px;
+    display: flex;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    /* background-color: antiquewhite; */
+}
+
+.item{
+ /* border: 5px solid red;  */
+ margin: 10px 10px;
+ padding: 5px 5px;
+ width: 110%;
+ /* background-color: antiquewhite; */
+}
+
+h2{
+    margin: -10px -10px;
+    padding: 0px 50px ;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: antiquewhite;
+    /* border-left: 3px solid gray; */
+}
+
+#left1{
+    /* float: left; */
+    margin: 5px 5px;
+    padding: 5px 5px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    /* position: absolute; */
+}
+
+p{
+   margin: 10px -10px ;
+   padding: 15px 50px ;
+   width: 180px;
+   background-color: antiquewhite;
+   border-left: 3px solid gray;
+}
+
+.Ranked{
+  /* margin: 100px 200px ;   */
+  background-color: aqua;
+  height: 0px;
+  text-align: center;
+  width: 0px;
+  padding: 150px 200px;
+}
+

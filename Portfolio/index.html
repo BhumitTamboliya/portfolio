@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumit Tamboliya - Frontend Developer</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="picture/icon.jpeg">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <span class="logo-text">Bhumit Tamboliya</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">BT</span>
+                <span class="logo-text">Bhumit<span>Tamboliya</span></span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Frontend Developer</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Bhumit Tamboliya</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    I specialize in creating beautiful, functional websites with clean code and modern technologies.
+                    Passionate about user experience and responsive design that brings ideas to life.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Work</span>
+                        <i class='bx bx-show'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="profile-container">
+                    <div class="profile-frame">
+                        <img src="picture/bhumit.jpg" alt="Bhumit Tamboliya">
+                        <div class="profile-overlay"></div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="tech-icon" style="--delay: 0s">
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 0.5s">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 1s">
+                            <i class='bx bxl-css3'></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 1.5s">
+                            <i class='bx bxl-bootstrap'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">About Me</span>
+                <h2 class="section-title">Crafting Digital Experiences</h2>
+                <p class="section-description">
+                    Passionate frontend developer with expertise in modern web technologies
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-frame">
+                        <img src="picture/bhumit.jpg" alt="Bhumit Tamboliya">
+                        <div class="experience-badge">
+                            <span class="experience-number">2+</span>
+                            <span class="experience-text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-text">
+                        <p>I'm a frontend developer passionate about creating intuitive and engaging web experiences. With a focus on clean code and thoughtful design, I bridge the gap between functionality and aesthetics.</p>
+                        <p>My approach combines technical expertise with creative problem-solving to deliver solutions that are both visually appealing and technically robust.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-code-alt'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable and scalable code</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-devices'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Responsive Design</h4>
+                                <p>Perfect experience across all devices</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-rocket'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Performance</h4>
+                                <p>Optimized for speed and efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Services</span>
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-description">
+                    Comprehensive web development services to bring your ideas to life
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class='bx bx-palette'></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually appealing interfaces that enhance user experience and engagement.</p>
+                    <div class="service-features">
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                        <span>User Research</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive, performant websites with clean code using modern technologies and best practices.</p>
+                    <div class="service-features">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class='bx bx-mobile-alt'></i>
+                    </div>
+                    <h3>Web Optimization</h3>
+                    <p>Optimizing websites for performance, SEO, and accessibility to ensure the best user experience.</p>
+                    <div class="service-features">
+                        <span>Performance</span>
+                        <span>SEO</span>
+                        <span>Accessibility</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="professional-skills" id="skills">
+        <div class="container">
+            <div class="skills-header" data-aos="fade-up">
+                <h2 class="skills-main-title">My Professional</h2>
+                <h3 class="skills-sub-title">Background Skills and Accomplishments</h3>
+                <p class="skills-description">
+                    Specialized in creating beautiful, functional websites with clean code and modern technologies.
+                    Passionate about user experience and responsive design that brings ideas to life.
+                </p>
+            </div>
+            
+            <div class="skills-content">
+                <!-- Left Side - Skill Icons -->
+                <div class="skills-icons" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="skill-icon-item">
+                        <div class="skill-circle frontend-circle">
+                            <i class='bx bx-code-alt'></i>
+                        </div>
+                        <span class="skill-icon-label">Frontend</span>
+                    </div>
+                    
+                    <div class="skill-icon-item">
+                        <div class="skill-circle programming-circle">
+                            <i class='bx bx-terminal'></i>
+                        </div>
+                        <span class="skill-icon-label">Programming</span>
+                    </div>
+                    
+                    <div class="skill-icon-item">
+                        <div class="skill-circle tools-circle">
+                            <i class='bx bx-wrench'></i>
+                        </div>
+                        <span class="skill-icon-label">Tools</span>
+                    </div>
+                    
+                    <div class="skill-icon-item">
+                        <div class="skill-circle design-circle">
+                            <i class='bx bx-palette'></i>
+                        </div>
+                        <span class="skill-icon-label">Design</span>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Progress Bars -->
+                <div class="skills-progress" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="progress-group">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">HTML5 & CSS3</span>
+                                <span class="progress-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="95"></div>
+                                <div class="progress-handle" style="left: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">JavaScript</span>
+                                <span class="progress-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                                <div class="progress-handle" style="left: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Bootstrap</span>
+                                <span class="progress-percentage">88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88"></div>
+                                <div class="progress-handle" style="left: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-group">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">C/C++ Programming</span>
+                                <span class="progress-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                                <div class="progress-handle" style="left: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Git & Version Control</span>
+                                <span class="progress-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                                <div class="progress-handle" style="left: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Networking</span>
+                                <span class="progress-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                                <div class="progress-handle" style="left: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools Section -->
+                    <div class="tools-section">
+                        <h4 class="tools-title">Development Tools</h4>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <i class='bx bxl-visual-studio'></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class='bx bxl-github'></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class='bx bx-terminal'></i>
+                                <span>Terminal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of my recent work and personal projects
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Development</div>
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A responsive portfolio website built with HTML, CSS, and JavaScript featuring modern design and smooth animations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Dashboard</div>
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-description">
+                            Admin dashboard for e-commerce management with analytics features and responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Landing Page">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Landing Page</div>
+                        <h3 class="project-title">Business Landing Page</h3>
+                        <p class="project-description">
+                            Modern landing page with interactive elements and optimized for conversions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind? Let's discuss how we can bring your ideas to life
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-avatar">
+                            <img src="picture/bhumit.jpg" alt="Bhumit Tamboliya">
+                        </div>
+                        <div class="contact-details">
+                            <h3>Bhumit Tamboliya</h3>
+                            <p>Frontend Developer</p>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-envelope'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>Email</span>
+                                        <a href="mailto:tamboliyabhumit@gmail.com">tamboliyabhumit@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-phone'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>Phone</span>
+                                        <a href="tel:+919875185951">+91 98751 85951</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-map'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>Location</span>
+                                        <p>Gujarat, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/bhumit-tamboliya-0ab738294/" target="_blank" class="social-link">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                                <a href="https://github.com/BhumitTamboliya" target="_blank" class="social-link">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <form class="contact-form" name="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbzwJXhhbb-uoMVKuHeeEAQw7I-mUfnHvv0_u8fa9gbc1kkg0xNzKb4zdKSGBJD0k1gF/exec">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="your name" required>
+                                <label for="name">Your Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="your email" required>
+                                <label for="email">Email Address</label>
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="your subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">
+                                <i class='bx bx-send'></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">BT</span>
+                        <span class="logo-text">Bhumit<span>Tamboliya</span></span>
+                    </div>
+                    <p>Frontend Developer passionate about creating amazing web experiences.</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2024 Bhumit Tamboliya. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919875185951?text=Hello%20Bhumit,%20I'm%20interested%20in%20your%20services!" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+        });
+    </script>
+</body>
+</html>

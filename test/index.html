@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Web Development Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Hyper Text Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> High Text Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language
+                </label>
+            </div>
+
+            <div class="question">
+                <p>2. Which of these is used for styling a web page?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> HTML
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> CSS
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> JavaScript
+                </label>
+            </div>
+
+            <div class="question">
+                <p>3. What does CSS stand for?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> Cascading Style Sheets
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> Computer Style Sheets
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> Creative Style Sheets
+                </label>
+            </div>
+
+            <div class="question">
+                <p>4. Which HTML tag is used to display images?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> img
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> image
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> picture
+                </label>
+            </div>
+
+            <div class="question">
+                <p>5. Which of the following is a valid JavaScript variable declaration?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> var myVar;
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> let myVar;
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> All of the above
+                </label>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

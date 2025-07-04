@@ -1,0 +1,68 @@
+andmin.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank IFSC Codes - Admin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6 text-center">Bank IFSC Codes - Admin Panel</h1>
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold mb-4">Upload Bank Data</h2>
+            <p class="mb-4">Upload a CSV or XLSX file (max 5MB). Download sample files: 
+                <a href="samples/sample-bank-data.csv" class="text-blue-600 hover:underline">Sample CSV</a> | 
+                <a href="samples/sample-bank-data.xlsx" class="text-blue-600 hover:underline">Sample XLSX</a>
+            </p>
+            <form id="upload-form" enctype="multipart/form-data" class="space-y-4">
+                <input type="file" name="bank_file" accept=".csv,.xlsx" required class="block w-full border border-gray-300 rounded-md p-2">
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">Upload File</button>
+            </form>
+            <form id="reset-form" class="mt-4">
+                <button type="submit" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700" onclick="return confirm('Are you sure you want to reset all data?');">Reset Data</button>
+            </form>
+            <div id="mapping-section" class="mt-6 hidden">
+                <h2 class="text-xl font-semibold mb-4">Map Columns</h2>
+                <form id="mapping-form" class="space-y-4">
+                    <div>
+                        <label for="map_bank_name" class="block text-sm font-medium text-gray-700">Bank Name</label>
+                        <select id="map_bank_name" name="map[bank_name]" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_state_name" class="block text-sm font-medium text-gray-700">State Name</label>
+                        <select id="map_state_name" name="map[state_name]" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_city_district" class="block text-sm font-medium text-gray-700">City/District</label>
+                        <select id="map_city_district" name="map[city_district]" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_branch_name" class="block text-sm font-medium text-gray-700">Branch Name</label>
+                        <select id="map_branch_name" name="map[branch_name]" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_ifsc_code" class="block text-sm font-medium text-gray-700">IFSC Code</label>
+                        <select id="map_ifsc_code" name="map[ifsc_code]" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_swift_code" class="block text-sm font-medium text-gray-700">SWIFT Code (Optional)</label>
+                        <select id="map_swift_code" name="map[swift_code]" class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <div>
+                        <label for="map_micr_code" class="block text-sm font-medium text-gray-700">MICR Code (Optional)</label>
+                        <select id="map_micr_code" name="map[micr_code]" class="mt-1 block w-full border border-gray-300 rounded-md p-2"></select>
+                    </div>
+                    <input type="hidden" id="file_data" name="file_data">
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">Upload Mapped Data</button>
+                </form>
+            </div>
+            <div id="message" class="mt-4"></div>
+        </div>
+    </div>
+</body>
+</html>
+
