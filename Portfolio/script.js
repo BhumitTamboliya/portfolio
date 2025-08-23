@@ -428,3 +428,26 @@ function forceSkillsVisibility() {
 setTimeout(forceSkillsVisibility, 100);
 setTimeout(forceSkillsVisibility, 500);
 setTimeout(forceSkillsVisibility, 1000);
+
+
+
+document.getElementById("myForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Page reload na ho
+
+      const formData = new FormData(this);
+
+      fetch("https://script.google.com/macros/s/AKfycbySodQKSrwwNeD7u38Sd_6Ow0s-j8kEs0S1WSrnBL676gDPChAT00tRs1-_1B6gu0Dx/exec", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("✅ Form submitted successfully!");
+        console.log(data);
+        document.getElementById("myForm").reset(); // form clear ho jayega
+      })
+      .catch(error => {
+        alert("❌ Error submitting form!");
+        console.error(error);
+      });
+    });

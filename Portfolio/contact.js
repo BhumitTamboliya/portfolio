@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxEyYkcULNpAhiFoCQrp_QmBP8zoS2_omqH3dTx3xx-cvyxiTewkOIKXNdaix7dDwdQFg/exec';
 
     if (contactForm) {
         contactForm.addEventListener('submit', async function(e) {
@@ -21,8 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             try {
-                // Simulate form submission (replace with actual form submission)
-                await new Promise(resolve => setTimeout(resolve, 1500));
+                // Get form data
+                const formData = new FormData(contactForm);
+
+                // Send data to Google Apps Script
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
                 
                 // Show success message
                 formSuccess.classList.remove('hidden');
