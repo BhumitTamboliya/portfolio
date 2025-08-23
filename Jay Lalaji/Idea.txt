@@ -1,0 +1,96 @@
+🛒 Website Plan: Online Jewelry Store with Mandatory Login
+✅ Goal
+Build a modern, responsive, secure website where users must sign up or log in before they can see any products or features.
+
+📚 Full Stack Tech Used
+🖥️ Frontend (Client-Side)
+React.js – UI framework
+
+Tailwind CSS – Styling (fast, clean)
+
+React Router DOM – For routing
+
+Axios – To make API requests
+
+LocalStorage – To store JWT token
+
+🗄️ Backend (Server-Side)
+Node.js + Express.js – Server framework
+
+MongoDB with Mongoose – Database to store users, products, orders
+
+bcryptjs – For password hashing
+
+jsonwebtoken (JWT) – For secure login sessions
+
+☁️ Hosting
+Frontend: Vercel or Netlify
+
+Backend: Render / Railway / Cyclic
+
+Database: MongoDB Atlas (Cloud DB)
+
+Domain: GoDaddy / Namecheap (optional)
+
+🔐 Login System Flow (Compulsory Access Control)
+🔑 Step	Details
+1. User opens site	Redirected to /login if not logged in
+2. User signs up or logs in	With name, email, and password
+3. Token is generated (JWT)	Stored in localStorage or cookie
+4. User now accesses	Home, products, cart, checkout, etc.
+5. Backend verifies JWT	All API requests are protected
+
+📄 Website Pages & Features
+Page	Description	Access
+/signup	New user creates account	Public
+/login	Existing user logs in	Public
+/ (Home)	Banners, intro, featured products	Protected
+/products	View all jewelry items	Protected
+/product/:id	See full product details	Protected
+/cart	View cart, remove/add items	Protected
+/checkout	Form for address, payment	Protected
+/thank-you	Order confirmation	Protected
+/about	Story of your father’s business	Protected
+/contact	WhatsApp, email, location	Protected
+/admin/login	Admin dashboard login	Admin Only
+/admin/dashboard	Add/edit/delete products, view orders	Admin Only
+
+🔧 Features Summary
+Feature	Description
+👤 Login/Signup	Required for all users
+🛍️ Products Listing	Add jewelry items with image, price
+🛒 Cart System	Add to cart, manage items
+💳 Payment (Optional)	Razorpay / Stripe or Cash on Delivery
+📦 Admin Panel	Manage products, view orders
+🔍 Search & Filter	By price, category, type
+🌟 Customer Reviews	Add & show product feedback
+🟢 WhatsApp Chat	Floating button to chat directly
+🔐 JWT Auth + Protected Routes	Full security on backend/frontend
+
+💾 Folder Structure Idea
+bash
+Copy
+Edit
+/client (React Frontend)
+  ├── /pages
+  ├── /components
+  ├── /context (auth)
+  └── App.js
+
+/server (Node.js Backend)
+  ├── /routes (auth, product, order)
+  ├── /controllers
+  ├── /models (User, Product, Order)
+  ├── /middleware (verifyToken)
+  └── server.js
+🔜 Next Step
+Let me know:
+
+✅ Do you want to start with Login + Signup pages now?
+✅ Do you want basic UI first or full UI with animation?
+✅ Should we use localStorage or cookie for storing token?
+
+Once you say yes, I’ll help you step by step with full code!
+
+Ready when you are, Bhumit. 💻🔥
+this is my website structure can you tell me it is good or not
